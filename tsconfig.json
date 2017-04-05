@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es5",//compiler target currently browser supports 5 only
     "module": "commonjs",
     "moduleResolution": "node",
-    "sourceMap": true,
-    "emitDecoratorMetadata": true,
+    "sourceMap": true,// if typescript should generate the map file.Map file are used in debugging
+    "emitDecoratorMetadata": true,//Attributes /Decorators
     "experimentalDecorators": true,
     "removeComments": false,
-    "noImplicitAny": false,
+    "noImplicitAny": false,//if all the variables should be strongly typed.
     "suppressImplicitAnyIndexErrors": true,
     "typeRoots": [
       "./node_modules/@types/"
@@ -19,3 +19,4 @@
     "**/*-aot.ts"
   ]
 }
+
