@@ -1,0 +1,11 @@
+    <div *ngFor="let emp of employeeList" class="col-md-5">
+    
+    <div class='well horwell thumnail'>
+    <div>Employee Name -{{emp.employeeName|uppercase}} </div>
+    <div>Employee Number -{{emp.employeeNumber}} </div>
+    <div>Employee Dept -{{emp.employeeDept}} </div>
+    <div>Employee Salary - {{emp.employeeSalary|currency:'USD':'true'}} </div>
+    <div>Employee Rating - <emp-rating [ratingNumber]='emp.employeeworkRating'  (clicked)='onNotify($event)'  ></emp-rating> </div>
+    
+</div>
+    </div>
