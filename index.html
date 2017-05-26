@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ng Events</title>
+    <title>EmployeePortal</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -18,9 +18,13 @@
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     
     <script src="systemjs.config.js"></script>
+     <!-- Loading the APPS -->
+  <script>
+    System.import('app').catch(function (err) { console.error(err); });
+  </script>
   </head>
   
   <body class="container">
-    
+    <pm-pm>Loading app.. </pm-pm>
   </body>
 </html>
